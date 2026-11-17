@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { ArrowRight, ArrowUpRight, BookOpen, BriefcaseBusiness, CheckCircle2, GraduationCap, MonitorPlay, Sparkles } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, BookOpen, BriefcaseBusiness, GraduationCap, Sparkles } from 'lucide-react'
 import { SiteShell } from '@/components/SiteShell'
-import { academy, courses, faqs } from '@/data/academy'
+import { courses, faqs } from '@/data/academy'
 
 export const Route = createFileRoute('/')({ component: Home })
 const heroImage = 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=85'
