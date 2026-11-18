@@ -31,7 +31,7 @@ function AboutPage() {
             <div><span className="eyebrow">Founder & CEO</span><h2>Meet Adekunle <span className="serif">Emmanuel.</span></h2></div>
             <p>From healthcare to technology, his journey shaped a belief that education should prepare people to apply what they learn and create meaningful opportunities.</p>
           </div>
-          <div className="founder-profile" style={{ display: 'grid', gridTemplateColumns: 'minmax(240px, 0.72fr) minmax(0, 1.28fr)', gap: 'clamp(24px, 5vw, 64px)', alignItems: 'start', maxWidth: '1120px', margin: '0 auto' }}>
+          <div className="founder-profile">
             <figure style={{ margin: 0, position: 'relative' }}>
               <img src="https://github.com/user-attachments/assets/4486707c-3300-403c-b488-67696c45a48a" alt="Adekunle Emmanuel, Founder and CEO of ADEK Studio Academy" style={{ display: 'block', width: '100%', aspectRatio: '3 / 4', objectFit: 'cover', objectPosition: 'center 22%', borderRadius: '18px' }} loading="lazy" />
               <figcaption style={{ paddingTop: '14px', color: 'var(--muted)', fontSize: '0.92rem' }}>Adekunle Emmanuel · Founder &amp; CEO</figcaption>
