@@ -31,7 +31,12 @@ function AboutPage() {
             <div><span className="eyebrow">Founder & CEO</span><h2>Meet Adekunle <span className="serif">Emmanuel.</span></h2></div>
             <p>From healthcare to technology, his journey shaped a belief that education should prepare people to apply what they learn and create meaningful opportunities.</p>
           </div>
-          <div className="content-narrow">
+          <div className="founder-profile" style={{ display: 'grid', gridTemplateColumns: 'minmax(240px, 0.72fr) minmax(0, 1.28fr)', gap: 'clamp(24px, 5vw, 64px)', alignItems: 'start', maxWidth: '1120px', margin: '0 auto' }}>
+            <figure style={{ margin: 0, position: 'relative' }}>
+              <img src="https://github.com/user-attachments/assets/4486707c-3300-403c-b488-67696c45a48a" alt="Adekunle Emmanuel, Founder and CEO of ADEK Studio Academy" style={{ display: 'block', width: '100%', aspectRatio: '3 / 4', objectFit: 'cover', objectPosition: 'center 22%', borderRadius: '18px' }} loading="lazy" />
+              <figcaption style={{ paddingTop: '14px', color: 'var(--muted)', fontSize: '0.92rem' }}>Adekunle Emmanuel · Founder &amp; CEO</figcaption>
+            </figure>
+            <div className="content-narrow" style={{ maxWidth: 'none', margin: 0 }}>
             <p><strong>Adekunle Emmanuel is a registered nurse, technology entrepreneur and the founder of ADEK Studio Academy.</strong> He established the academy in 2023, and it became fully operational in 2024.</p>
             <p>His professional journey began in healthcare, where he practised as a registered nurse for approximately two years. His growing curiosity about technology and its potential to transform industries and create opportunities gradually drew him towards the digital world. In 2023, he made a deliberate transition into technology, pursuing his interest in innovation, creativity and problem-solving.</p>
             <p>Since then, he has developed experience across several areas, including video editing, motion graphics design, digital marketing, 3D creative production, AI automation for content creation and AI model training.</p>
@@ -39,6 +44,7 @@ function AboutPage() {
             <p>This conviction inspired him to establish ADEK Studio Academy. Through the academy, he is committed to developing more than technically knowledgeable students. His goal is to help people become practically competent, professionally prepared and capable of turning their skills into meaningful opportunities.</p>
             <p>He believes technology education should empower people to build projects, solve real problems, create businesses, generate income and contribute to the development of their communities. His broader vision is to see more Nigerians and Africans develop globally competitive skills, create innovative solutions and participate confidently in the global digital economy.</p>
             <p>His leadership philosophy is built around integrity, discipline, practical learning, opportunity creation and excellence. Through ADEK Studio Academy, he is working towards a future where education is measured not merely by what people know, but by what they can create, solve and accomplish with what they have learned.</p>
+            </div>
           </div>
         </section>
 
