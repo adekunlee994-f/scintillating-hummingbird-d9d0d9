@@ -1,26 +1,18 @@
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-
-
 import '../styles.css'
 
 export const Route = createRootRoute({
   head: () => ({
     meta: [
-      {
-        charSet: 'utf-8',
-      },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1',
-      },
-      {
-        title: 'Adek Studio Academy | Digital Skills Academy in Lagos',
-      },
-      { name: 'description', content: 'Practical tech and digital skills training in Lagos and online. Learn web development, digital marketing, video editing, design, cybersecurity, AI and more.' },
-      { name: 'keywords', content: 'digital skills academy in Lagos, tech training Lagos, digital marketing training Lagos, online digital skills training Nigeria' },
-      { property: 'og:title', content: 'Adek Studio Academy — Learn. Build. Earn.' },
-      { property: 'og:description', content: 'Practical digital and technology training for careers, freelancing, business and client work.' },
+      { charSet: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { title: 'ADEK Studio Academy | Practical Digital Skills Training in Lagos' },
+      { name: 'description', content: 'Build practical digital and technology skills with ADEK Studio Academy in Ikeja, Lagos, or online. Explore technology, creative, marketing and AI courses.' },
+      { name: 'theme-color', content: '#0B2A6F' },
+      { property: 'og:title', content: 'ADEK Studio Academy — Skills That Create Opportunities' },
+      { property: 'og:description', content: 'Practical digital skills training, real projects and guidance for your next step.' },
       { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://scintillating-hummingbird-d9d0d9.netlify.app/' },
       { property: 'og:image', content: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=82' },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
@@ -30,16 +22,17 @@ export const Route = createRootRoute({
 })
 
 function RootDocument({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({ '@context':'https://schema.org','@type':'EducationalOrganization',name:'Adek Studio Academy',slogan:'Learn. Build. Earn.',telephone:'+2348123456732',address:{'@type':'PostalAddress',streetAddress:'Tokunbo Ali, Opebi',addressLocality:'Ikeja',addressRegion:'Lagos State',addressCountry:'NG'},sameAs:[] })}} />
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  )
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOrganization',
+    name: 'ADEK Studio Academy',
+    slogan: 'Skills That Create Opportunities.',
+    telephone: '+234805935721',
+    address: { '@type': 'PostalAddress', streetAddress: 'Tokunbo Ali, Opebi', addressLocality: 'Ikeja', addressRegion: 'Lagos State', addressCountry: 'NG' },
+    url: 'https://scintillating-hummingbird-d9d0d9.netlify.app/',
+  }
+  return <html lang="en"><head><HeadContent /></head><body>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+    {children}<Scripts />
+  </body></html>
 }
